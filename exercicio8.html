@@ -13,6 +13,39 @@
     <h1>Exercício 8</h1>
 
     <script>
+        var nota1 = parseFloat(prompt("Digite a sua nota do 1º Bimestre"))
+        var nota2 = parseFloat(prompt("Digite a sua nota do 2º Bimestre"))
+        var nota3 = parseFloat(prompt("Digite a sua nota do 3º Bimestre"))
+        var nota4 = parseFloat(prompt("Digite a sua nota do 4º Bimestre"))
+
+        var nota1certa = parseFloat
+        var nota2certa = parseFloat
+        var nota3certa = parseFloat
+        var nota4certa = parseFloat
+
+        if ((nota1 > 0) && (nota1 < 10))
+            nota1certa = nota1
+        else
+            nota1certa = 0
+        if ((nota2 > 0) && (nota2 < 10))
+            nota2certa = nota2
+        else
+            nota2certa = 0
+        if ((nota3 > 0) && (nota3 < 10))
+            nota3certa = nota3
+        else
+            nota3certa = 0
+        if ((nota4 > 0) && (nota4 < 10))
+            nota4certa = nota4
+        else
+            nota4certa = 0
+
+        var media = parseFloat((nota1certa + nota2certa + nota3certa + nota4certa) / 4)
+
+        if (media > 5)
+            document.write("Você passou no teste! Sua média foi de: " + media)
+        else
+            document.write("Tente Novamente, sua média foi de: " + media)
     </script>
 
 </body>
